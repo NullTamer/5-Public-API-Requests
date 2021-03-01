@@ -7,7 +7,7 @@ fetch("https://randomuser.me/api/?results=12")
   .catch((error) => console.log(error));
 
 function populateGallery(employee) {
-  //populates gallery with employee cards
+  //Populates gallery with employee cards
   for (let i = 0; i < employee.results.length; i++) {
     let birthday = new Date(employee.results[i].dob.date);
     // Modal Overlay
